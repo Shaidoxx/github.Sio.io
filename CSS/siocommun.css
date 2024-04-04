@@ -1,0 +1,177 @@
+body {
+    background-color: #151515;
+}
+
+
+#h1-title {
+    padding-top: 5%;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins Black', sans-serif;
+
+    font-size: 5em;
+}
+
+#h2-desc {
+    text-align: center;
+    color: grey;
+    font-family: 'Poppins Thin', sans-serif;
+}
+
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.back i {
+    font-size: 20px;
+}
+
+.container {
+    padding-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; /* Ajoutez cette ligne */
+}
+
+.box {
+    padding: 1em;
+    background: #151515;
+    border-color: #1c1c1c; 
+    border-width: 2px;
+    border-style: solid; 
+    width: calc((50% - 3 * 2.5%) / 4); /* Change this to a relative unit */
+    height: 20%;
+    margin: 2.5%; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Add these media queries to adjust the number of boxes per line */
+@media (max-width: 1200px) {
+    .box {
+        width: calc((50% - 2 * 2.5%) / 3);
+    }
+}
+
+@media (max-width: 800px) {
+    .box {
+        width: calc((50% - 2.5%) / 2);
+    }
+}
+
+@media (max-width: 500px) {
+    .box {
+        width: 50%;
+    }
+}
+.image {
+    margin-right: 0;  /* Ajoutez cette ligne pour éliminer la marge à droite de l'image */
+}
+
+
+
+
+.esp {
+    background: #151515;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Poppins Bold', sans-serif;
+    transition: font-size 0.3s ease-in-out; /* Add transition property */
+}
+
+.esp:hover {
+    background: #151515;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Poppins Bold', sans-serif;
+}
+
+
+#titleBox {
+    background: linear-gradient(to right, #7300ff, #d328bc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Poppins Bold', sans-serif;
+    font-size: 20px;
+    overflow: visible;
+    width: 100%;
+
+}
+
+#descbox {
+    color: white;
+    font-family: 'Poppins Thin', sans-serif;
+    overflow: hidden;
+
+}
+
+.text {
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+    position: inherit;
+}
+
+.image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.image img {
+    max-width: 20%; /* Cela garantit que l'image ne dépasse pas la largeur de son conteneur */
+    height: auto;/* Cela maintient le ratio d'aspect de l'image */
+   
+}
+
+
+
+@media (min-width: 20%) {
+    .image {
+        width: 20%;
+    }
+}
+
+
+
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('FONTS/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins Thin';
+    src: url('FONTS/Poppins-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins Black';
+    src: url('FONTS/Poppins-Black.ttf');
+}
